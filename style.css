@@ -1,0 +1,149 @@
+/* Basic styling */
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(image/bgimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    margin: 10px 0;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Tab content hidden by default */
+  .tab-content {
+    display: none;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Adjust width for responsiveness */
+    max-width: 400px; /* Max width for large screens */
+    margin: 0 auto; /* Center alignment on small screens */
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  
+  .tab-btn {
+    padding: 10px 15px;
+    border: none;
+    background-color: #e6e6e6;
+    color: #333;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+  }
+  
+  .tab-btn.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Google Sign Up Button */
+  .form-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #googleBtn {
+    background-color: #4285F4; /* Google Blue */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  #googleBtn:hover {
+    background-color: #357AE8; /* Darker Google Blue */
+    transform: translateY(-2px);
+  }
+  
+  #googleBtn:active {
+    background-color: #2C6BE4; /* Even Darker Blue */
+    transform: translateY(1px);
+  }
+  
+  #googleBtn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.4); /* Focus ring */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    body {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .tab-content {
+      width: 100%; /* Full width for smaller screens */
+      padding: 15px;
+    }
+  
+    button {
+      font-size: 14px; /* Adjust button size for smaller screens */
+    }
+  
+    #googleBtn {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 18px; /* Adjust heading size for very small screens */
+    }
+  
+    input {
+      font-size: 14px; /* Smaller font for inputs */
+    }
+  
+    button, #googleBtn {
+      font-size: 12px;
+      padding: 10px 10px; /* Compact padding for buttons */
+    }
+  }
+  

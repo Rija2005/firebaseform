@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login and Sign-Up with Firebase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+    <div class="dashboard-container">
+        <!-- Tab navigation -->
+        <div class="tab-container">
+            <button class="tab-btn active" data-tab="signup">Sign Up</button>
+            <button class="tab-btn" data-tab="login">Login</button>
+            <button class="tab-btn" data-tab="update">Update Profile</button>
+        </div>
+    
+        <!-- Tab Content -->
+        <div id="signup" class="tab-content active">
+            <h2>Sign Up</h2>
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="text" id="number" placeholder="Phone Number" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="pass" placeholder="Password" required>
+            <input type="password" id="confirm_pass" placeholder="Confirm Password" required>
+            <button id="signUp_btn">Sign Up</button>
+            <p>Already have an account? <a href="javascript:void(0);" onclick="showTab('login')">Login</a></p>
+        </div>
+    
+        <div id="login" class="tab-content">
+            <h2>Login</h2>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="pass" placeholder="Password" required>
+            <button id="login_btn">Login</button>
+            <p>Don't have an account? <a href="javascript:void(0);" onclick="showTab('signup')">Sign Up</a></p>
+        </div>
+    
+        <div id="update" class="tab-content">
+            <h2>Update Profile</h2>
+            <input type="text" id="name" placeholder="Name">
+            <input type="text" id="number" placeholder="Phone Number">
+            <button id="update_btn">Update Profile</button>
+            <button id="delete_btn">Delete Account</button>
+        </div>
+    
+        <!-- Google Sign Up Button -->
+        <div class="form-container">
+            <button id="googleBtn">Sign Up with Google</button>
+        </div>
+    </div>
+    
+   
+  <!-- Firebase and Logic Scripts -->
+  <script src="firebase.js" type="module"></script>
+  <script src="script.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+
+*{
+    font-family: cursive;
+}
+.navbar{
+    background-color: #11414d !important;
+}
+.navbar-brand{
+    color: #ffff;
+}
+.navbar-brand:hover{
+    color: #ffff;
+}
+.btn{
+    background-color: #11414d;
+    color: #ffff;
+}
+.btn:hover{
+    background-color: #ffff;
+    color: #11414d;
+    border: 2px solid #11414d;
+
+}
+.swal2-confirm{
+    background-color: #11414d;
+}
+.images{
+    justify-content: space-around;
+}
+.bg-img{
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+}
+.selectedImg{
+    border: 2px solid #11414d;
+}
+/* .card-body{
+    /* background-size: cover; */
+    /* background-position: bottom; */
